@@ -46,7 +46,10 @@ public class gameManager : MonoBehaviourPun
     }
 
     [PunRPC]
-
+    public void gameOver()
+    {
+        SceneManager.LoadScene("win");
+    }
 
     public void DestroyObject(GameObject objee)
     {
